@@ -1,0 +1,409 @@
+/* hashim-hassan.com */
+
+:root {
+  /* colors */
+  --bg: #f5f3ee;
+  --text: #1d1c1a;
+  --muted: #6d6a64;
+  --rule: #dcd8cf;
+  --accent: #1f4a38; /* racing green: links, labels, focus */
+
+  /* fonts */
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  /* spacing */
+  --gutter: 20px;
+  --measure: 720px;
+  --section-gap: 80px;
+  --date-col: 8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* small mono text: labels, dates, nav */
+.label,
+.date,
+.entry-date,
+.site-nav,
+.site-footer {
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* ---------- header / nav ---------- */
+
+.site-header,
+main,
+.site-footer {
+  max-width: calc(var(--measure) + var(--gutter) * 2);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 28px 0;
+}
+
+.site-name {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-name:hover {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration-color: transparent;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+/* only shown on small screens, and only if JS is running */
+.menu-button {
+  display: none;
+  padding: 4px 0;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  transition: color 150ms ease;
+}
+
+.menu-button:hover {
+  color: var(--accent);
+}
+
+
+/* ---------- intro ---------- */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 40px;
+  align-items: start;
+  padding-top: 48px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 44px;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-size: 21px;
+  color: var(--muted);
+}
+
+.headshot {
+  width: 200px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: var(--rule); /* shows as a plain box until the photo exists */
+}
+
+
+/* ---------- sections ---------- */
+
+.section {
+  margin-top: var(--section-gap);
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+.label {
+  margin: 0 0 28px;
+  font-weight: 500;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+}
+
+.date,
+.entry-date {
+  color: var(--muted);
+}
+
+.now-list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.now-list li + li {
+  margin-top: 8px;
+}
+
+.now-list li::marker {
+  color: var(--muted);
+}
+
+.section > p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---------- work list ---------- */
+
+.entry {
+  display: grid;
+  grid-template-columns: var(--date-col) 1fr;
+  gap: 0 24px;
+}
+
+.entry + .entry {
+  margin-top: 56px;
+}
+
+.entry-date {
+  margin: 0;
+  padding-top: 4px; /* lines the date up with the h3 baseline-ish */
+}
+
+.entry h3 {
+  margin: 0 0 4px;
+  font-size: 22px;
+}
+
+.entry-meta {
+  color: var(--muted);
+}
+
+.entry-meta strong {
+  color: var(--text);
+}
+
+.entry-body > :last-child {
+  margin-bottom: 0;
+}
+
+.shot {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 20px;
+  border: 1px solid var(--rule);
+  background: var(--rule);
+}
+
+.shot-tall {
+  max-width: 240px;
+}
+
+/* images that link somewhere get a green border on hover */
+.shot-link {
+  display: block;
+  width: fit-content;
+}
+
+.shot-link .shot {
+  transition: border-color 150ms ease;
+}
+
+.shot-link:hover .shot {
+  border-color: var(--accent);
+}
+
+
+/* ---------- background ---------- */
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: var(--date-col) 1fr;
+  gap: 0 24px;
+}
+
+.timeline li + li {
+  margin-top: 16px;
+}
+
+.timeline .entry-date {
+  padding-top: 4px;
+}
+
+.timeline p {
+  margin: 0;
+}
+
+
+/* ---------- contact / footer ---------- */
+
+.links {
+  font-size: 17px;
+}
+
+.site-footer {
+  margin-top: var(--section-gap);
+  margin-bottom: 40px;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 639px) {
+  :root {
+    --section-gap: 64px;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  .site-nav {
+    padding: 20px 0;
+  }
+
+  /* collapse the links behind the Menu button */
+  .js .menu-button {
+    display: block;
+  }
+
+  .js .nav-links {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 0 4px;
+  }
+
+  .js .nav-links.is-open {
+    display: flex;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-top: 24px;
+  }
+
+  .headshot {
+    order: -1; /* photo above the name on phones */
+    width: 160px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .tagline {
+    font-size: 19px;
+  }
+
+  /* dates go above each entry instead of beside it */
+  .entry,
+  .timeline li {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-date {
+    padding-top: 0;
+    margin-bottom: 4px;
+  }
+
+  .entry + .entry {
+    margin-top: 44px;
+  }
+
+  .shot {
+    max-width: 100%;
+  }
+
+  .shot-tall {
+    max-width: 240px;
+  }
+}

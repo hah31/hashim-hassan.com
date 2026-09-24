@@ -1,0 +1,5 @@
+# GitHub Pages runs Jekyll, which would publish these .md files as web pages.
+# content.md holds the private checklist, so keep both out of the built site.
+exclude:
+  - content.md
+  - images/README.md
