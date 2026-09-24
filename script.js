@@ -17,3 +17,31 @@ menuButton.addEventListener('click', () => {
 navLinks.addEventListener('click', (e) => {
   if (e.target.closest('a')) setMenu(false);
 });
+
+// Virality guide code box. The code itself isn't stored here, only its SHA-256
+// hash, so it can't be read out of the page source. This keeps casual visitors
+// out; it isn't real security, since the guide page is still a public file.
+const codeForm = document.getElementById('code-form');
+
+if (codeForm) {
+  const CODE_HASH = '683c4c5f020902bee2ac5a0d6d9aef3aa64f1967bcb4024ecbbb32b6ee7c4243';
+  const codeInput = document.getElementById('code-input');
+  const codeError = document.getElementById('code-error');
+
+  async function sha256(text) {
+    const bytes = new TextEncoder().encode(text);
+    const digest = await crypto.subtle.digest('SHA-256', bytes);
+    return Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  codeForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const code = codeInput.value.trim().toLowerCase();
+    if (await sha256(code) === CODE_HASH) {
+      window.location.href = '/virality/';
+    } else {
+      codeError.hidden = false;
+      codeInput.select();
+    }
+  });
+}

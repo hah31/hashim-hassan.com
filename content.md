@@ -5,19 +5,19 @@ description: "Hashim (Hash) Hassan studies Mechanical Engineering at UIUC and ru
 
 # Hashim Hassan
 
-Mechanical Engineering at UIUC. Founder of Elimenti, a web design studio.
+Mechanical Engineering at UIUC. Founder of Elimenti Web Studio.
 
-I'm a freshman from the western Chicago suburbs, and most people call me Hash. I run every part of Elimenti myself, from cold outreach to invoicing. This past summer I was one of three students on a Fermilab project, trying to get AI models to answer from real documentation instead of making things up.
+I'm a freshman from the western Chicago suburbs. I'm currently scaling Elimenti Web Studio. This past summer I was an AI Research Intern at Fermilab, working on a project to decrease hallucinations in LLMs.
 
 ## Now
 
 *Updated September 2026*
 
-- Looking for an early-stage startup where I can own a project end to end.
-- First semester at UIUC, including ME 170, where I'm learning CAD in Fusion 360.
-- Maintaining sites for local businesses through Elimenti.
-- On the Community team at Founders: Illinois Entrepreneurs.
-- Doing creative direction for [Burdi Clothing](https://www.instagram.com/burdiclothing) in Hinsdale.
+- Looking for an internship or co-op at an early-stage startup.
+- First semester at UIUC, which includes learning CAD in Fusion 360.
+- Building custom sites for local businesses at [Elimenti](https://elimenti.com).
+- On the Community Team at Founders: Illinois Entrepreneurs.
+- Doing creative direction for [Burdi Clothing](https://www.instagram.com/burdiclothing) in Hinsdale, IL.
 - Planning to apply to the Hoeft Technology & Management minor.
 
 ## Work
@@ -30,7 +30,7 @@ I'm a freshman from the western Chicago suburbs, and most people call me Hash. I
 
 Our team modeled the MI-8 target and the CMS detector in OML, then gave an LLM tools to query them with SPARQL.
 
-**My part: I wrote our own benchmark, since models often train on public ones, and wrote OML vocabularies for our models.**
+**My part: I wrote custom benchmark tests, since models often train on public benchmarks, and wrote OML vocabularies for our models.**
 
 [Project slides (PDF, cleared by Fermilab for public release)](fermilab-slides.pdf)
 
@@ -40,9 +40,9 @@ Our team modeled the MI-8 target and the CMS detector in OML, then gave an LLM t
 
 **Web design studio** · 2026–now · Founder
 
-I hand-code static websites for local businesses that compete on quality and design, and I maintain existing sites for others.
+I build custom-coded static websites for local businesses, focusing on quality and design. I also maintain existing sites for others.
 
-Built elimenti.com and the site for my first client, 1 of 1 Car Club.
+Already at 3 paying clients and 1 pro bono build.
 
 [elimenti.com](https://elimenti.com)
 
@@ -54,7 +54,7 @@ Built elimenti.com and the site for my first client, 1 of 1 Car Club.
 
 I started an automotive media brand that also sold clothing.
 
-20M organic views on Instagram alone.
+Over 20,000,000 organic views on Instagram.
 
 [@vitesse.automotive](https://www.instagram.com/vitesse.automotive/)
 
@@ -64,29 +64,33 @@ I started an automotive media brand that also sold clothing.
 
 **Car club** · 2024–2025 · Co-founder
 
-I co-founded a 60+ member car club and organized a charity car meet for HCS Family Services.
+I co-founded a 60+ member car club and organized a charity car meet to raise money for [HCS Family Services](https://www.hcsfamilyservices.org/).
 
-200+ cars at the meet, $10K+ raised.
+We had over 200 cars at the meet, and we raised over $10,000.
 
 [@reddevilsgarage](https://www.instagram.com/reddevilsgarage/)
 
 ## Background
 
-- **2026–now** · B.S. Mechanical Engineering, The Grainger College of Engineering, UIUC (class of 2030). Started with 53 credits from AP exams.
+- **2026–now** · B.S. Mechanical Engineering, The Grainger College of Engineering, UIUC (class of 2030). First-year student with Sophomore standing. Started with 53 credits from AP exams.
 - **Summer 2026** · AI Research Intern, Fermilab
 - **2026** · Started Step One Sites, renamed it Elimenti in April
-- **Summer 2025** · Research and design intern, Northwestern University Transplant Center
 - **2024–now** · Creative direction, Burdi Clothing, Hinsdale. Took over maintaining their website in 2025.
+- **Summer 2024** · Research and design intern, Northwestern University Transplant Center
 
 ## Outside of work
 
-I ran cross country and track through high school and raced more than 120 times. Best mile: 4:57. I also sim race in Gran Turismo 7 and follow motorsport.
+I ran cross country and track throughout high school and raced more than 120 times. My best mile was a 4:57. I also sim race in Gran Turismo 7 and follow motorsport. Big car guy (I love Ferrari and Aston Martin).
 
 ## Contact
 
 Email is the fastest way to reach me: [hashim.hassan.us@gmail.com](mailto:hashim.hassan.us@gmail.com)
 
 [LinkedIn](https://www.linkedin.com/in/hashimhassan/) · [Instagram](https://www.instagram.com/hashimh6ssan) · [Elimenti](https://elimenti.com) · [Resume](resume.pdf)
+
+## My Guide to Virality
+
+Code box. Entering the right code sends you to /virality/ (virality/index.html).
 
 ---
 

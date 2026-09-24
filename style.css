@@ -155,7 +155,7 @@ main,
 
 .intro {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 100px;
   gap: 40px;
   align-items: start;
   padding-top: 48px;
@@ -173,7 +173,7 @@ h1 {
 }
 
 .headshot {
-  width: 200px;
+  width: 100px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   background: var(--rule); /* shows as a plain box until the photo exists */
@@ -320,6 +320,64 @@ h1 {
   font-size: 17px;
 }
 
+/* code box for the virality guide */
+.code-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.code-input,
+.code-button {
+  font-family: var(--mono);
+  font-size: 16px; /* 16px+ stops iOS from zooming in on focus */
+  line-height: 1.5;
+  padding: 8px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  color: var(--text);
+  background: transparent;
+}
+
+.code-input {
+  flex: 1 1 200px;
+  max-width: 280px;
+}
+
+.code-input::placeholder {
+  color: var(--muted);
+}
+
+.code-input:focus-visible {
+  outline-offset: 0;
+}
+
+.code-button {
+  cursor: pointer;
+  transition: border-color 150ms ease, color 150ms ease;
+}
+
+.code-button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.code-error {
+  margin: 12px 0 0;
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .site-footer {
   margin-top: var(--section-gap);
   margin-bottom: 40px;
@@ -373,7 +431,7 @@ h1 {
 
   .headshot {
     order: -1; /* photo above the name on phones */
-    width: 160px;
+    width: 80px;
   }
 
   h1 {
