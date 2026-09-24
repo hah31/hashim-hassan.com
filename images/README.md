@@ -9,7 +9,7 @@ swap one out, keep the same filename, then update the `width` and `height` on it
 | `headshot.jpg` | 480 × 600 (4:5) | 40 KB | Intro, next to the name (200px wide, 160px on phones) |
 | `fermilab-feynman-center.jpg` | 480 × 600 (4:5) | 88 KB | Work: Fermilab entry (240px wide). Photo from slide 4 of the deck |
 | `elimenti-home.jpg` | 720 × 411 | 19 KB | Work: Elimenti entry (up to 360px wide). Links to elimenti.com |
-| `vitesse-top-post.jpg` | 720 × 457 | 49 KB | Work: Vitesse entry (up to 360px wide). Links to @vitesse.automotive |
+| `vitesse-top-post.jpg` | 720 × 457 | 49 KB | Work: Vitesse entry (up to 360px wide). Links to the post itself |
 | `red-devils-charity-meet.jpg` | 720 × 408 | 82 KB | Work: Red Devils Garage entry (up to 360px wide) |
 | `og.jpg` | 1200 × 630 | 57 KB | Not on the page. The preview image when the link is shared in iMessage, LinkedIn, Slack, etc. |
 
