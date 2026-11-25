@@ -40,7 +40,7 @@ Our team modeled the MI-8 target and the CMS detector in OML, then gave an LLM t
 
 **Web design studio** · 2026–now · Founder
 
-I hand-code static websites for local businesses that compete on quality and design, and I maintain existing sites for others.
+I design and build websites for local businesses that compete on quality and design, on WordPress or custom-coded, and I maintain existing WordPress sites for others.
 
 Built elimenti.com and the site for my first client, 1 of 1 Car Club.
 
